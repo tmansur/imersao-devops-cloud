@@ -1,0 +1,2 @@
+# Ignora o diretório node_modules ao criar a imagem docker
+node_modules/
