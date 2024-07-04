@@ -1,5 +1,23 @@
 # Imersão DevOps && Cloud 
 
+## Aula 2 - Kubernetes: do zero ao deploy
+
+### K3D
+
+Ferramenta para auxiliar na montagem de um cluster kubernetes local para provas de conceito e utilizar como ambiente de estudo. O processo de instalação pode ser consultado no site da ferramenta: https://k3d.io/
+
+> [!NOTE]
+> Outras ferramentas existentes para criar um cluster kubernetes local:
+> - K3S
+> - MicroK8S
+> - Kind
+> - Minikube
+
+> [!IMPORTANT]
+> É necessário instalar o X que é uma ferramenta de linha de comando para interagir com o cluster.
+
+
+
 ### Comando para criar o cluster com k3d e executar a aplicação:
 ```Bash
 k3d cluster create meucluster -p "8080:30000@loadbalancer"
