@@ -1,5 +1,9 @@
 # Imersão DevOps && Cloud 
 
+## Extensões recomendadas para VS Code
+
+- Kubernetes (autor: Microsoft)
+
 ## Aula 2 - Kubernetes: do zero ao deploy
 
 ### K3D
@@ -14,11 +18,26 @@ Ferramenta para auxiliar na montagem de um cluster kubernetes local para provas 
 > - Minikube
 
 > [!IMPORTANT]
-> É necessário instalar o X que é uma ferramenta de linha de comando para interagir com o cluster.
+> É recomendado a intalação do **kubectl**, que é uma ferramenta de linha de comando para interagir com o cluster.
 
+#### Criação de cluster com k3d
 
+##### k3d cluster create
+Cria cluster kubernetes com apenas um workernode.
 
-### Comando para criar o cluster com k3d e executar a aplicação:
+Parâmetros:
+- <nome>
+- --servers <numero de servers>
+- --agents <número de agents>
+
+Visualizar os nodes: `kubectl get nodes`
+
+#### k3d cluster list
+Lista os clusters criados
+
+#### k3d cluster delete
+
+#### Comando para criar o cluster com k3d e executar a aplicação:
 ```Bash
 k3d cluster create meucluster -p "8080:30000@loadbalancer"
 ```
